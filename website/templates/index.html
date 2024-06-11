@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map with Fixed Markers</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <style>
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../static/script/script.js"></script>
+      <div class="container">
+        <h1>Device Data</h1>
+        <form id="deviceForm">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="deviceID">Device ID:</label>
+            <input type="text" id="deviceID" name="deviceID" required>
+            
+            <button type="submit">View Map</button>
+        </form>
+    </div>
+</body>
+
+</html>
